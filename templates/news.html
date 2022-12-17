@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>News Articles</title>
+  </head>
+  <body>
+    {% for title, summary, image_src in articles %}
+      <h2>{{ title }}</h2>
+      <p>{{ summary }}</p>
+      <img src="{{ image_src }}">
+    {% endfor %}
+  </body>
+</html>
